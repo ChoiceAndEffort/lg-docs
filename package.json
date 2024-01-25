@@ -1,0 +1,27 @@
+{
+  "name": "hb-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vitepress dev docs --host",
+    "dev1": "vitepress dev docs --host --port 5166",
+    "build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.1",
+    "vitepress": "^1.0.0-beta.2"
+  },
+  "dependencies": {
+    "@hb/hb-hooks": "^0.0.4",
+    "@hb/hb-utils": "^0.1.1-beta.11",
+    "element-plus": "^2.3.8",
+    "sass": "^1.64.2",
+    "vue-router": "^4.2.4"
+  }
+}
