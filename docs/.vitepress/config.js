@@ -11,6 +11,14 @@ module.exports = {
   themeConfig: {
     siteTitle: 'LG博客', //左上角的
     logo: '/logo.png', //左上角的logo,注意：它的路径是从public文件夹开始的，所以这里引用的是public/logo.jpg这张图
+    // socialLinks: [
+    //   { icon: 'github', link: 'https://github.com/gumingWu/vitepress-fun' }
+    // ],
+    footer: {
+      message: '其实我也不知道写啥注脚',
+      copyright: '那我就随便写个吧'
+    },
+
     nav: [
       //右上角的导航栏
       {
@@ -241,62 +249,6 @@ module.exports = {
           ]
         }
       ],
-      // "rules-regulations": [
-      //   {
-      //     items: [
-      //       {
-      //         text: "导师制度",
-      //         link: "/rules-regulations/mentoring",
-      //       },
-      //       {
-      //         text: "新人培训制度",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "岗位晋升制度",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "日报制度",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "周会制度",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "代码审查制度",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "绩效制度",
-      //         link: "",
-      //         items: [
-      //           {
-      //             text: "前端绩效管理体系",
-      //             link: "",
-      //           },
-      //         ],
-      //       },
-      //       {
-      //         text: "考勤制度",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "异常上报制度",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "团建制度",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "资源申报制度",
-      //         link: "",
-      //       },
-      //     ],
-      //   },
-      // ],
       'project-introduction': [
         {
           items: [
