@@ -14,10 +14,10 @@ module.exports = {
     // socialLinks: [
     //   { icon: 'github', link: 'https://github.com/gumingWu/vitepress-fun' }
     // ],
-    footer: {
-      message: '其实我也不知道写啥注脚',
-      copyright: '那我就随便写个吧'
-    },
+    // footer: {
+    //   message: '其实我也不知道写啥注脚',
+    //   copyright: '那我就随便写个吧'
+    // },
 
     nav: [
       //右上角的导航栏
@@ -58,192 +58,104 @@ module.exports = {
         link: '/resources/index',
         activeMatch: '/resources/'
       },
-      {
-        text: '技术博客',
-        link: '/blog/index',
-        activeMatch: '/blog/'
-      }
+      // {
+      //   text: '技术博客',
+      //   link: '/blog/index',
+      //   activeMatch: '/blog/'
+      // }
     ],
     sidebar: {
       '/development-tool/': [
         {
           items: [
             {
-              text: 'nvm使用',
-              link: '/development-tool/nvm-use/index'
-              // items: [
-              //   {
-              //     text: "下载",
-              //     link: "/new-guidance/first-lesson/corporate-culture",
-              //   },
-              //   {
-              //     text: "组织架构",
-              //     link: "/new-guidance/first-lesson/organizational-structure",
-              //   },
-              //   {
-              //     text: "考勤",
-              //     link: "/new-guidance/first-lesson/attendance-system",
-              //   },
-
-              //   {
-              //     text: "日报制度",
-              //     link: "/new-guidance/first-lesson/daily",
-              //   },
-              // ],
+              text: 'node工具',
+              items: [
+                {
+                  text: 'nvm使用',
+                  link: '/development-tool/nvm-use/index'
+                },
+                {
+                  text: 'nrm使用',
+                  link: '/development-tool/nrm-use/index'
+                },
+                {
+                  text: 'rimraf使用',
+                  link: '/development-tool/rimraf-use/index'
+                }
+              ]
             },
             {
-              text: 'nrm使用',
-              link: '/development-tool/nrm-use/index'
-              // items: [
-              //   {
-              //     text: "开发工具介绍",
-              //     link: "/new-guidance/second-lesson/development-tool",
-              //   },
-
-              // ],
-            },
-            {
-              text: 'rimraf使用',
-              link: '/development-tool/rimraf-use/index'
-            },
-            {
-              text: 'anywhere启动服务',
-              link: '/development-tool/anywhere-use/index'
+              text: '服务工具',
+              items: [
+                {
+                  text: 'anywhere启动服务',
+                  link: '/development-tool/anywhere-use/index'
+                }
+              ]
             }
           ]
         }
       ],
-      // "/new-guidance/": [
-      //   {
-      //     items: [
-      //       {
-      //         text: "第一课",
-      //         // link: '/new-guidance/first-lesson/corporate-culture',
-      //         items: [
-      //           {
-      //             text: "企业文化",
-      //             link: "/new-guidance/first-lesson/corporate-culture",
-      //           },
-      //           {
-      //             text: "组织架构",
-      //             link: "/new-guidance/first-lesson/organizational-structure",
-      //           },
-      //           {
-      //             text: "考勤",
-      //             link: "/new-guidance/first-lesson/attendance-system",
-      //           },
-
-      //           {
-      //             text: "日报制度",
-      //             link: "/new-guidance/first-lesson/daily",
-      //           },
-      //         ],
-      //       },
-      //       {
-      //         text: "第二课",
-      //         // link: '/project-introduction/c/introduce',
-      //         items: [
-      //           {
-      //             text: "开发工具介绍",
-      //             link: "/new-guidance/second-lesson/development-tool",
-      //           },
-      //           {
-      //             text: "代码托管工具",
-      //             link: "/new-guidance/second-lesson/code-hosting",
-      //           },
-      //           {
-      //             text: "任务管理",
-      //             link: "/new-guidance/second-lesson/zen-tao",
-      //           },
-      //           {
-      //             text: "接口管理",
-      //             link: "/new-guidance/second-lesson/Interface-address",
-      //           },
-      //           {
-      //             text: "node使用",
-      //             link: "/new-guidance/second-lesson/node-introduce",
-      //           },
-      //           {
-      //             text: "镜像管理",
-      //             link: "/new-guidance/second-lesson/image-management",
-      //           },
-      //         ],
-      //       },
-      //       {
-      //         text: "第三课",
-      //         // link: '/project-introduction/c/introduce',
-      //         items: [
-      //           {
-      //             text: "迭代项目",
-      //             link: "/new-guidance/third-lesson/Iterative-project",
-      //           },
-      //         ],
-      //       },
-      //     ],
-      //   },
-      // ],
       standard: [
         {
           items: [
             {
-              text: '规范',
+              text: '命名',
               items: [
                 {
-                  text: 'html规范',
-                  link: '/standard/html/index'
+                  text: '命名类型',
+                  link: '/standard/name/name-type'
                 },
+                {
+                  text: '项目命名',
+                  link: '/standard/name/project-name'
+                },
+                {
+                  text: '文件命名',
+                  link: '/standard/name/file-name'
+                }
+              ]
+            },
+            {
+              text: 'css规范',
+              items: [
                 {
                   text: 'CSS规范',
                   link: '/standard/css/index'
-                },
-                {
-                  text: '目录规范',
-                  // link: "/standard/directory/vue",
-                  items: [
-                    {
-                      text: 'vue项目目录规范',
-                      link: '/standard/directory/vue'
-                    },
-                    {
-                      text: 'react项目目录规范',
-                      link: '/standard/directory/react'
-                    }
-                  ]
-                },
+                }
+              ]
+            },
 
+            {
+              text: '提交规范',
+              items: [
                 {
                   text: 'git提交规范',
                   link: '/standard/git/index'
-                },
+                }
+              ]
+            },
+            {
+              text: 'eslint检查',
+              items: [
                 {
                   text: 'eslint规范',
                   link: '/standard/eslint/index'
                 }
-                // {
-                //   text: "流程图设计规范",
-                //   link: "",
-                // },
-                // {
-                //   text: "组件开发规范",
-                //   link: "",
-                // },
-                // {
-                //   text: "项目规范/版本规范",
-                //   link: "",
-                // },
-
-                // {
-                //   text: "代码管理规范",
-                //   link: "",
-                // },
-                // {
-                //   text: "发版规范",
-                //   link: "",
-                // },
-                // {
-                //   text: "架构设计规范",
-                //   link: "",
-                // },
+              ]
+            },
+            {
+              text: '目录结构规范',
+              items: [
+                {
+                  text: 'vue项目目录规范',
+                  link: '/standard/directory/vue'
+                },
+                {
+                  text: 'react项目目录规范',
+                  link: '/standard/directory/react'
+                }
               ]
             }
           ]
@@ -289,38 +201,6 @@ module.exports = {
             }
           ]
         }
-
-        // {
-        //   items: [
-        //     {
-        //       text: 'B端项目',
-        //       items: [
-        //         {
-        //           text: '介绍',
-        //           link: '/project-introduction/b/introduce'
-        //         },
-        //         {
-        //           text: '生产管理',
-        //           link: '/project-introduction/b/gggj_production_management'
-        //         }
-        //       ]
-        //     },
-        //     {
-        //       text: 'C端项目',
-        //       link: '/project-introduction/c/introduce',
-        //       items: [
-        //         {
-        //           text: '介绍',
-        //           link: '/project-introduction/c/introduce'
-        //         },
-        //         {
-        //           text: '钢构商城',
-        //           link: '/project-introduction/c/siip-steel-mall'
-        //         }
-        //       ]
-        //     }
-        //   ]
-        // }
       ],
       ui: [
         {
@@ -340,12 +220,22 @@ module.exports = {
         {
           items: [
             {
-              text: 'vite打包优化专题',
-              link: '/special-subject/vite-optimization/index'
+              text: '打包',
+              items: [
+                {
+                  text: 'vite打包优化专题',
+                  link: '/special-subject/vite-optimization/index'
+                }
+              ]
             },
             {
-              text: 'vue性能优化专题              ',
-              link: '/special-subject/vue-optimization/index'
+              text: '性能优化',
+              items: [
+                {
+                  text: 'vue性能优化专题              ',
+                  link: '/special-subject/vue-optimization/index'
+                }
+              ]
             }
           ]
         }
