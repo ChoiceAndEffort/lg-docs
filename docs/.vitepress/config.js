@@ -28,7 +28,7 @@ module.exports = {
       },
       {
         text: '规范',
-        link: '/standard/html/index',
+        link: '/standard/name/name-type',
         activeMatch: '/standard/'
       },
       // {

@@ -4,13 +4,13 @@
 
 统一的请求封装
 
-## 使用
 
+### 安装
 ```sh
 npm i -g @lg/lg-services  //安装
 
 ```
-
+### 使用
 ```js
 import { HttpRequest } from '@lg/lg-services';
 
