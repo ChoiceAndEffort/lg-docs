@@ -57,7 +57,7 @@ module.exports = {
         text: '资源',
         link: '/resources/index',
         activeMatch: '/resources/'
-      },
+      }
       // {
       //   text: '技术博客',
       //   link: '/blog/index',
@@ -170,12 +170,20 @@ module.exports = {
                 {
                   text: 'vite+vue3+管理后台',
                   link: '/project-introduction/b/vite+vue3+back'
+                },
+                {
+                  text: 'webpack5+vue2+管理后台',
+                  link: '/project-introduction/b/webpack+vue2+back'
                 }
               ]
             },
             {
               text: 'C端项目',
               items: [
+                {
+                  text: '宇晨官网',
+                  link: '/project-introduction/c/yu-chen'
+                },
                 {
                   text: 'vite+vue3+官网',
                   link: '/project-introduction/c/vite+vue3+front'
@@ -247,258 +255,24 @@ module.exports = {
           activeMatch: '/tools/'
         },
         {
-          text: 'hb-cli',
+          text: 'lg-cli',
           collapsible: false, //是不是可以动态展开
           collapsed: false, //默认是不是展开
           items: [
             {
               text: '介绍',
-              link: '/tools/hb-cli/introduce'
-            },
-            {
-              text: '初始编码环境',
-              link: '/tools/hb-cli/init-encode-env'
-            },
-            {
-              text: '创建标准项目',
-              link: '/tools/hb-cli/create-project'
-            },
-            {
-              text: '创建标准模块',
-              link: '/tools/hb-cli/add-module'
-            },
-            {
-              text: '初始mock服务',
-              link: '/tools/hb-cli/init-mock'
+              link: '/tools/lg-cli/introduce'
             }
           ]
         },
         {
-          text: 'hb-utils',
+          text: 'lg-utils',
           collapsible: false, //是不是可以动态展开
           collapsed: false, //默认是不是展开
           items: [
             {
               text: '介绍',
-              link: '/tools/hb-utils/introduce'
-            },
-            {
-              text: '数组',
-              collapsible: true, //是不是可以动态展开
-              collapsed: true, //默认是不是展开
-              items: [
-                {
-                  text: 'treeToArray',
-                  link: '/tools/hb-utils/base/array/treeToArray'
-                },
-                {
-                  text: 'group',
-                  link: '/tools/hb-utils/base/array/group'
-                },
-                {
-                  text: 'saveOptionsArr',
-                  link: '/tools/hb-utils/base/array/saveOptionsArr'
-                },
-                {
-                  text: 'arrToSelectArr',
-                  link: '/tools/hb-utils/base/array/arrToSelectArr'
-                },
-                {
-                  text: 'arrayIntersection',
-                  link: '/tools/hb-utils/base/array/arrayIntersection'
-                },
-                {
-                  text: 'arrayExcept',
-                  link: '/tools/hb-utils/base/array/arrayExcept'
-                }
-              ]
-            },
-            {
-              text: '时间',
-              collapsible: true, //是不是可以动态展开
-              collapsed: true, //默认是不是展开
-              items: [
-                {
-                  text: 'time',
-                  link: '/tools/hb-utils/base/date/time'
-                },
-                {
-                  text: 'timeFormat',
-                  link: '/tools/hb-utils/base/date/timeFormat'
-                },
-                {
-                  text: 'shortTime',
-                  link: '/tools/hb-utils/base/date/shortTime'
-                },
-                {
-                  text: 'exactDate',
-                  link: '/tools/hb-utils/base/date/exactDate'
-                },
-                {
-                  text: 'monthTime',
-                  link: '/tools/hb-utils/base/date/monthTime'
-                },
-                {
-                  text: 'monthDayTime',
-                  link: '/tools/hb-utils/base/date/monthDayTime'
-                },
-                {
-                  text: 'yearTime',
-                  link: '/tools/hb-utils/base/date/yearTime'
-                },
-                {
-                  text: 'getMonth',
-                  link: '/tools/hb-utils/base/date/getMonth'
-                },
-                {
-                  text: 'dateDiff',
-                  link: '/tools/hb-utils/base/date/dateDiff'
-                },
-                {
-                  text: 'addDate',
-                  link: '/tools/hb-utils/base/date/addDate'
-                },
-                {
-                  text: 'subDate',
-                  link: '/tools/hb-utils/base/date/subDate'
-                },
-                {
-                  text: 'showFormatTime',
-                  link: '/tools/hb-utils/base/date/showFormatTime'
-                },
-                {
-                  text: 'computeDate',
-                  link: '/tools/hb-utils/base/date/computeDate'
-                },
-                {
-                  text: 'dayDif',
-                  link: '/tools/hb-utils/base/date/dayDif'
-                }
-              ]
-            },
-            {
-              text: '数学',
-              collapsible: true, //是不是可以动态展开
-              collapsed: true, //默认是不是展开
-              items: [
-                {
-                  text: 'randomNum',
-                  link: '/tools/hb-utils/base/math/randomNum'
-                }
-              ]
-            },
-            {
-              text: '金钱',
-              collapsible: true, //是不是可以动态展开
-              collapsed: true, //默认是不是展开
-              items: [
-                {
-                  text: 'numberToCurrencyNo',
-                  link: '/tools/hb-utils/base/money/numberToCurrencyNo'
-                },
-                {
-                  text: 'amountFormat',
-                  link: '/tools/hb-utils/base/money/amountFormat'
-                },
-                {
-                  text: 'numberToChinese',
-                  link: '/tools/hb-utils/base/money/numberToChinese'
-                }
-              ]
-            },
-            {
-              text: '对象',
-              collapsible: true, //是不是可以动态展开
-              collapsed: true, //默认是不是展开
-              items: [
-                {
-                  text: 'deepClone',
-                  link: '/tools/hb-utils/base/object/deepClone'
-                },
-                {
-                  text: 'hasOwnProperties',
-                  link: '/tools/hb-utils/base/object/hasOwnProperties'
-                }
-              ]
-            },
-            {
-              text: '字符串',
-              collapsible: true, //是不是可以动态展开
-              collapsed: true, //默认是不是展开
-              items: [
-                {
-                  text: 'hideMobile',
-                  link: '/tools/hb-utils/base/string/hideMobile'
-                },
-                {
-                  text: 'hideIdCard',
-                  link: '/tools/hb-utils/base/string/hideIdCard'
-                }
-              ]
-            },
-            {
-              text: '函数',
-              collapsible: true, //是不是可以动态展开
-              collapsed: true, //默认是不是展开
-              items: [
-                {
-                  text: 'isObjectUnEmpty',
-                  link: '/tools/hb-utils/functions/deal-empty/isObjectUnEmpty'
-                },
-                {
-                  text: 'emptyFormatter',
-                  link: '/tools/hb-utils/functions/deal-empty/emptyFormatter'
-                },
-                {
-                  text: 'textEmpty',
-                  link: '/tools/hb-utils/functions/deal-empty/textEmpty'
-                },
-                {
-                  text: 'numFormatter',
-                  link: '/tools/hb-utils/functions/deal-empty/numFormatter'
-                },
-                {
-                  text: 'nonemptyFilter',
-                  link: '/tools/hb-utils/functions/deal-empty/nonemptyFilter'
-                },
-
-                {
-                  text: 'doubleDigit',
-                  link: '/tools/hb-utils/functions/deal-serial-no/doubleDigit'
-                },
-                {
-                  text: 'indexMethod',
-                  link: '/tools/hb-utils/functions/deal-serial-no/indexMethod'
-                },
-                {
-                  text: 'indexFormatter',
-                  link: '/tools/hb-utils/functions/deal-serial-no/indexFormatter'
-                },
-                {
-                  text: 'bounce',
-                  link: '/tools/hb-utils/functions/debounce/bounce'
-                },
-                {
-                  text: 'throttle',
-                  link: '/tools/hb-utils/functions/throttle/throttle'
-                },
-                {
-                  text: 'downloadByATag',
-                  link: '/tools/hb-utils/functions/download/downloadByATag'
-                },
-                {
-                  text: 'validateMobile',
-                  link: '/tools/hb-utils/functions/validate/validateMobile'
-                },
-                {
-                  text: 'validateEmail',
-                  link: '/tools/hb-utils/functions/validate/validateEmail'
-                },
-                {
-                  text: 'idCardValidity',
-                  link: '/tools/hb-utils/functions/validate/idCardValidity'
-                }
-              ]
+              link: '/tools/lg-utils/introduce'
             }
           ]
         },
@@ -510,142 +284,27 @@ module.exports = {
           items: [
             {
               text: '介绍',
-              link: '/tools/hb-services/introduce'
-            },
-            {
-              text: 'axios原生',
-              link: '/tools/hb-services/http'
-            },
-            {
-              text: 'axios二次封装',
-              link: '/tools/hb-services/ajax'
+              link: '/tools/lg-services/introduce'
             }
           ]
         },
         {
-          text: 'hb-hooks',
+          text: 'lg-hooks',
           collapsible: false, //是不是可以动态展开
           collapsed: false, //默认是不是展开
 
           items: [
             {
               text: '介绍',
-              link: '/tools/hb-hooks/introduce'
+              link: '/tools/lg-hooks/introduce'
             },
             {
-              text: 'State',
-              collapsible: true, //是不是可以动态展开
-              collapsed: true, //默认是不是展开
-              items: [
-                {
-                  text: 'useBoolean',
-                  link: '/tools/hb-hooks/useBoolean'
-                },
-                {
-                  text: 'useDebounce',
-                  link: '/tools/hb-hooks/useDebounce'
-                },
-                {
-                  text: 'useThrottle',
-                  link: '/tools/hb-hooks/useThrottle'
-                },
-                {
-                  text: 'useToggle',
-                  link: '/tools/hb-hooks/useToggle'
-                }
-              ]
+              text: 'send-code',
+              link: '/tools/lg-hooks/send-code'
             },
             {
-              text: ' Effect',
-              collapsible: true, //是不是可以动态展开
-              collapsed: true, //默认是不是展开
-              items: [
-                {
-                  text: 'useDebounceFn',
-                  link: '/tools/hb-hooks/useDebounceFn'
-                },
-                {
-                  text: 'useThrottleFn',
-                  link: '/tools/hb-hooks/useThrottleFn'
-                }
-              ]
-            },
-            {
-              text: ' Scene',
-              collapsible: true, //是不是可以动态展开
-              collapsed: true, //默认是不是展开
-              items: [
-                {
-                  text: 'useCounter',
-                  link: '/tools/hb-hooks/useCounter'
-                },
-                {
-                  text: 'useVirtualList',
-                  link: '/tools/hb-hooks/useVirtualList'
-                }
-              ]
-            },
-            {
-              text: ' ElementDom',
-              collapsible: true, //是不是可以动态展开
-              collapsed: true, //默认是不是展开
-              items: [
-                {
-                  text: 'useFullscreen',
-                  link: '/tools/hb-hooks/useFullscreen'
-                },
-                {
-                  text: 'useSize',
-                  link: '/tools/hb-hooks/useSize'
-                },
-                {
-                  text: 'useWinResize',
-                  link: '/tools/hb-hooks/useWinResize'
-                }
-              ]
-            },
-            {
-              text: ' useRequest',
-              collapsible: true, //是不是可以动态展开
-              collapsed: true, //默认是不是展开
-              items: [
-                {
-                  text: '基础用法',
-                  link: '/tools/hb-hooks/useRequest-basic'
-                },
-                {
-                  text: '防抖',
-                  link: '/tools/hb-hooks/useRequest-debounce'
-                },
-                {
-                  text: '节流',
-                  link: '/tools/hb-hooks/useRequest-throttle'
-                },
-                {
-                  text: '轮询',
-                  link: '/tools/hb-hooks/useRequest-polling'
-                },
-                {
-                  text: 'Ready',
-                  link: '/tools/hb-hooks/useRequest-ready'
-                },
-                {
-                  text: '依赖刷新',
-                  link: '/tools/hb-hooks/useRequest-refreshDeps'
-                },
-                {
-                  text: '错误重试',
-                  link: '/tools/hb-hooks/useRequest-retryCount'
-                },
-                {
-                  text: '缓存&SWR',
-                  link: '/tools/hb-hooks/useRequest-cacheKey'
-                },
-                {
-                  text: 'Loading Delay',
-                  link: '/tools/hb-hooks/useRequest-loading'
-                }
-              ]
+              text: 'use-route-router',
+              link: '/tools/lg-hooks/use-route-router'
             }
           ]
         }

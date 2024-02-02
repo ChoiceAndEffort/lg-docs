@@ -2,7 +2,7 @@
  * @Author: lg
  * @Date: 2024-01-26 19:00:11
  * @LastEditors: lg
- * @LastEditTime: 2024-01-30 13:21:36
+ * @LastEditTime: 2024-02-02 10:03:12
  * @Description:
  * @FilePath: \lg-docs\docs\special-subject\vite-optimization\index.md
 -->
@@ -72,19 +72,19 @@ export default defineConfig({
         {
           name: 'vue',
           var: 'Vue',
-          path: 'https://gggj-fe.oss-cn-hangzhou.aliyuncs.com/element-plus/vue%403.3.4.global.js'
+          path: 'CDN  url'
         },
 
         {
           name: 'element-plus',
           var: 'ElementPlus',
-          path: 'https://gggj-fe.oss-cn-hangzhou.aliyuncs.com/element-plus/element-plus%402.3.12-index.full.js',
-          css: 'http://gggj-fe.oss-cn-hangzhou.aliyuncs.com/element-plus/element-plus%402.3.12-index.css'
+          path: 'CDN  url',
+          css: 'CDN  url'
         },
         {
           name: 'echarts',
           var: 'echarts',
-          path: 'https://gggj-fe.oss-cn-hangzhou.aliyuncs.com/element-plus/echarts%405.4.3.min.js'
+          path: 'CDN  url'
         }
       ]
     }),
