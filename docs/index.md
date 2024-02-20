@@ -20,21 +20,21 @@ hero:
       link: /standard/name/name-type
 features:
   - icon: 🍎
-    title: HTML
+    title: Html
   - icon: 🍏
-    title: JS
+    title: Js
   - icon: 🍊
-    title: CSS
+    title: Css
   - icon: 🍋
-    title: VUE
+    title: Vue
   - icon: 🍒
     title: React
   - icon: 🍇
     title: WEBPACK
   - icon: 🍉
-    title: VITE
+    title: Vite
   - icon: 🍓
-    title: ROULLUP
+    title: Roullup
   - icon: 🍑
-    title: NODEJS
+    title: NodeJs
 ---

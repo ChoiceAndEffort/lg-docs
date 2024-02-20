@@ -1,5 +1,6 @@
 .is-home {
-  background-image: url('https://photo.tuchong.com/1121145/f/157405450.jpg');
+  /* background-image: url('https://photo.tuchong.com/1121145/f/157405450.jpg'); */
+  background: transparent;
   background-size: cover;
   background-position: center;
 }

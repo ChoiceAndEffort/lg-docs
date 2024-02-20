@@ -42,16 +42,21 @@ module.exports = {
         activeMatch: '/project-introduction/'
       },
       { text: '工具包', link: '/tools/index', activeMatch: '/tools/' },
-      { text: '组件', link: '/ui/hb-ui/index', activeMatch: '/ui/' },
+      { text: '组件', link: '/ui/hb-ui-plus/index', activeMatch: '/ui/' },
       {
         text: '专题',
         link: '/special-subject/vite-optimization/index',
         activeMatch: '/special-subject/'
       },
+      // {
+      //   text: '常见问题',
+      //   link: '/questions/index',
+      //   activeMatch: '/questions/'
+      // },
       {
-        text: '常见问题',
-        link: '/questions/index',
-        activeMatch: '/questions/'
+        text: "关于",
+        link: "/about/",
+        activeMatch: "/about/",
       },
       {
         text: '资源',
@@ -213,10 +218,6 @@ module.exports = {
       ui: [
         {
           items: [
-            {
-              text: 'hb-ui',
-              link: '/ui/hb-ui/index'
-            },
             {
               text: 'hb-ui-plus',
               link: '/ui/hb-ui-plus/index'
