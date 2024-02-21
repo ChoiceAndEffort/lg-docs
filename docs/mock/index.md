@@ -10,7 +10,7 @@
 
 ## 操作步骤
 
-- **[参考 hb-cli init-mock初始化mock环境](/hb-packages/hb-cli/init-mock)**
+<!-- - **[参考 hb-cli init-mock初始化mock环境](/hb-packages/hb-cli/init-mock)** -->
 
 <!-- - 安装对应插件: npm i mockjs vite-plugin-mock -D
 
