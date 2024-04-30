@@ -278,7 +278,7 @@ module.exports = {
           ]
         },
         {
-          text: 'hb-services',
+          text: 'lg-services',
           collapsible: false, //是不是可以动态展开
           collapsed: false, //默认是不是展开
 
