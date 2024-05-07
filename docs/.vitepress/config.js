@@ -31,11 +31,6 @@ module.exports = {
         link: '/standard/name/name-type',
         activeMatch: '/standard/'
       },
-      // {
-      //   text: "规章制度",
-      //   link: "/rules-regulations/mentoring",
-      //   activeMatch: "/rules-regulations/",
-      // },
       {
         text: '项目介绍',
         link: '/project-introduction/b/vite+vue3+back',
@@ -48,11 +43,6 @@ module.exports = {
         link: '/special-subject/vite-optimization/index',
         activeMatch: '/special-subject/'
       },
-      // {
-      //   text: '常见问题',
-      //   link: '/questions/index',
-      //   activeMatch: '/questions/'
-      // },
       {
         text: "关于",
         link: "/about/",
@@ -63,11 +53,6 @@ module.exports = {
         link: '/resources/index',
         activeMatch: '/resources/'
       }
-      // {
-      //   text: '技术博客',
-      //   link: '/blog/index',
-      //   activeMatch: '/blog/'
-      // }
     ],
     sidebar: {
       '/development-tool/': [
@@ -87,6 +72,14 @@ module.exports = {
                 {
                   text: 'rimraf使用',
                   link: '/development-tool/rimraf-use/index'
+                },
+                {
+                  text: 'pm2使用',
+                  link: '/development-tool/pm2/index'
+                },
+                {
+                  text: 'pnpm使用',
+                  link: '/development-tool/pnpm/index'
                 }
               ]
             },
@@ -131,13 +124,21 @@ module.exports = {
                 }
               ]
             },
-
+            {
+              text: '分支管理',
+              items: [
+                {
+                  text: 'git分支管理',
+                  link: '/standard/branch-management/index'
+                }
+              ]
+            },
             {
               text: '提交规范',
               items: [
                 {
                   text: 'git提交规范',
-                  link: '/standard/git/index'
+                  link: '/standard/git-submit/index'
                 }
               ]
             },
