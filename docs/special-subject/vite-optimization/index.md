@@ -2,7 +2,7 @@
  * @Author: lg
  * @Date: 2024-01-26 19:00:11
  * @LastEditors: lg
- * @LastEditTime: 2024-02-02 10:03:12
+ * @LastEditTime: 2024-05-25 14:26:22
  * @Description:
  * @FilePath: \lg-docs\docs\special-subject\vite-optimization\index.md
 -->
@@ -14,6 +14,7 @@
 - 开启 gzip 压缩 vite-plugin-compression 插件
 - CDN 引入资源包 vite-plugin-cdn-import
 - 打包压缩
+- 图片压缩
 
 ## 代码配置
 
@@ -23,10 +24,18 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 
 import { resolve } from 'path';
+//打包分析
 import { visualizer } from 'rollup-plugin-visualizer';
 
+//开启gzip
 import viteCompression from 'vite-plugin-compression';
+
+//CDN
 import { autoComplete, Plugin as importToCDN } from 'vite-plugin-cdn-import';
+
+// 图片压缩
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import svgo from 'svgo';
 
 export default defineConfig({
   resolve: {
@@ -88,7 +97,13 @@ export default defineConfig({
         }
       ]
     }),
-
+    // 图片资源压缩
+    ViteImageOptimizer({
+      webp: {
+        quality: 75
+      },
+      svgo
+    }),
     //开启gzip
     viteCompression({
       disable: false, //是否禁用压缩，默认为 false

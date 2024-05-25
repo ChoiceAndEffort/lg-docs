@@ -1,3 +1,12 @@
+<!--
+ * @Author: lg
+ * @Date: 2024-02-02 11:02:13
+ * @LastEditors: lg
+ * @LastEditTime: 2024-05-25 14:18:58
+ * @Description:
+ * @FilePath: \lg-docs\docs\tools\lg-hooks\use-route-router.md
+-->
+
 # 路由跳转
 
 ## 简介
@@ -14,8 +23,6 @@ import type {
 
 import { useRouter, useRoute } from 'vue-router';
 
-import { ElMessage } from 'element-plus';
-
 /**
  * @description:路由跳转hook
  * @return {*}
@@ -23,24 +30,45 @@ import { ElMessage } from 'element-plus';
 export function useRouteRouter(): any {
   const router: Router = useRouter();
   const route: Route = useRoute();
-  const handleToPush = (name: string, sendData: any = {}): void => {
+  const routerPushByName = (name: string, params = {}, query = {}) => {
     try {
-      router.push({
-        name,
-        query: sendData
-      });
+      router.push({ name, params, query });
     } catch (error) {
-      console.log(error, '路由跳转报错');
-      ElMessage({
-        message: '路由跳转报错',
-        type: 'warning'
-      });
+      console.log(error);
     }
   };
+
+  const routerPushByPath = (path: string, query = {}) => {
+    try {
+      router.push({ path, query });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const routerReplaceByName = (name: string, params = {}, query = {}) => {
+    try {
+      router.replace({ name, params, query });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const routerReplaceByPath = (path: string, query = {}) => {
+    try {
+      router.replace({ path, query });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return {
     router,
     route,
-    handleToPush
+    routerPushByName,
+    routerPushByPath,
+    routerReplaceByName,
+    routerReplaceByPath
   };
 }
 ```
@@ -49,5 +77,12 @@ export function useRouteRouter(): any {
 
 ```ts
 import { useRouteRouter } from 'url';
-const { router, route, handleToPush } = useRouteRouter();
+const {
+  router,
+  route,
+  routerPushByName,
+  routerPushByPath,
+  routerReplaceByName,
+  routerReplaceByPath
+} = useRouteRouter();
 ```
