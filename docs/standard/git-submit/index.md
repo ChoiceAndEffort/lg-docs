@@ -9,14 +9,8 @@
 
 # GIT 提交规范
 
-## 思路说明
-
-- 提交前针对本次修改的的执行 eslint 检查(在 git 的 pre-commit 钩子中执行 )
-- 针对git commit msg执行检查 (在 git 的commit-msg 钩子中执行 )
-
-
-
 ## git commit msg 相关类型
+
 ```sh
   types: [
     { value: 'feat', name: 'feat: 新增功能' },
@@ -40,9 +34,6 @@
     {
       value: 'chore',
       name: 'chore: 对构建过程或辅助工具和库的更改（不影响源文件、测试用例）'
-    },
-    { value
-
-
+    }
 
 ```

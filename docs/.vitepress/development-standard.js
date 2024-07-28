@@ -46,6 +46,19 @@ module.exports = [
         ],
       },
       {
+        text: "目录结构规范",
+        items: [
+          {
+            text: "vue项目目录规范",
+            link: "/standard/directory/vue",
+          },
+          {
+            text: "react项目目录规范",
+            link: "/standard/directory/react",
+          },
+        ],
+      },
+      {
         text: "提交规范",
         items: [
           {
@@ -60,19 +73,6 @@ module.exports = [
           {
             text: "eslint规范",
             link: "/standard/eslint/index",
-          },
-        ],
-      },
-      {
-        text: "目录结构规范",
-        items: [
-          {
-            text: "vue项目目录规范",
-            link: "/standard/directory/vue",
-          },
-          {
-            text: "react项目目录规范",
-            link: "/standard/directory/react",
           },
         ],
       },

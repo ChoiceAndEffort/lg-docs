@@ -4,8 +4,6 @@
 
 > 目的：使前端样式代码规范、标准、统一
 
-> 目标：使产业互联网项目完美实现换肤（自定义主题和主题切换）
-
 ## 1.书写规范
 
 ### 1.1 命名
@@ -145,8 +143,8 @@ $font-size: 14px;
 ```css
 /* 正例 */
 .main {
-  border-width: .5px;
-  margin: .8px;
+  border-width: 0.5px;
+  margin: 0.8px;
 }
 ```
 
@@ -376,9 +374,9 @@ $--border-radius: 4px;
 #### 4.4 导入 @import
 
 ```css
-@import './base/index.scss'; //初始化、基础
-@import './state/index.scss'; //状态
-@import './mixin/index.scss'; //混合
+@import "./base/index.scss"; //初始化、基础
+@import "./state/index.scss"; //状态
+@import "./mixin/index.scss"; //混合
 ```
 
 ### 5.styles 文件目录 \*\*
@@ -409,7 +407,7 @@ $--border-radius: 4px;
       初始化样式文件，借用淘宝
       命名：标签
       必要：是
-      
+
  -base（基础）
       基础样式文件，字体、边框圆角、内边距、外边距 （可附带尺寸类型size: small mini）
       命名：--hb-
@@ -474,20 +472,28 @@ $--border-radius: 4px;
 - 6.6 响应式布局
   > 通过使用媒体查询（Media Query）和 CSS Grid 等技术来实现不同屏幕尺寸下的布局调整， 适用于适配不同设备和屏幕尺寸的布局。
 
-
 ### 7.架构
-#### 7.1 原子化CSS
-将CSS样式拆分成最小的可复用的单元，通过组合这些单元来构建页面。
-####  7.2 BEM（Block Element Modifier）
-将页面拆分成独立的块（Block），每个块包含一个或多个元素（Element），并通过修改器（Modifier）来改变块或元素的样式。这种方式可以提高代码的可读性和可维护性，但需要注意命名规范和层级关系。
-●block {}，block 代表了更高级别的抽象或组件。
-●block__element {}，代表 .block 的后代，用于形成一个完整的 .block 的整体。
-●block–modifier {}，代表 .block 的不同状态或不同版本。  
-参考地址：https://juejin.cn/post/7021461539236347940
-####  7.3 OOCSS（Object-Oriented CSS）
-将CSS样式抽象成可复用的对象，通过组合这些对象来构建页面。这种方式可以提高代码的复用性和可维护性，但需要注意对象的设计和组合方式。
-####  7.4 SMACSS（Scalable and Modular Architecture for CSS）
-将CSS样式按照功能和层级进行分类，通过模块化的方式来组织和管理样式。这种方式可以提高代码的可维护性和可扩展性，但需要注意模块的划分和命名规范。
-####  7.5 CSS-in-JS
-将CSS样式直接写在JavaScript代码中，通过JavaScript的能力来管理和组织样式。这种方式可以提高代码的可维护性和可扩展性，但需要注意代码的性能和复杂度。
 
+#### 7.1 原子化 CSS
+
+将 CSS 样式拆分成最小的可复用的单元，通过组合这些单元来构建页面。
+
+#### 7.2 BEM（Block Element Modifier）
+
+将页面拆分成独立的块（Block），每个块包含一个或多个元素（Element），并通过修改器（Modifier）来改变块或元素的样式。这种方式可以提高代码的可读性和可维护性，但需要注意命名规范和层级关系。
+- block {}，block 代表了更高级别的抽象或组件。
+- block\_\_element {}，代表 .block 的后代，用于形成一个完整的 .block 的整体。
+- block–modifier {}，代表 .block 的不同状态或不同版本。  
+参考地址：https://juejin.cn/post/7021461539236347940
+
+#### 7.3 OOCSS（Object-Oriented CSS）
+
+将 CSS 样式抽象成可复用的对象，通过组合这些对象来构建页面。这种方式可以提高代码的复用性和可维护性，但需要注意对象的设计和组合方式。
+
+#### 7.4 SMACSS（Scalable and Modular Architecture for CSS）
+
+将 CSS 样式按照功能和层级进行分类，通过模块化的方式来组织和管理样式。这种方式可以提高代码的可维护性和可扩展性，但需要注意模块的划分和命名规范。
+
+#### 7.5 CSS-in-JS
+
+将 CSS 样式直接写在 JavaScript 代码中，通过 JavaScript 的能力来管理和组织样式。这种方式可以提高代码的可维护性和可扩展性，但需要注意代码的性能和复杂度。
